@@ -5,3 +5,430 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  font-family: 'Monserrat', sans-serif;
+  color: #5b5e6d;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+#nav-bar {
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 1em;
+  background: white;
+  border-bottom: solid #e8e8e8 1px;
+}  
+
+#nav-bar img {
+  width: 20%;
+}
+
+.dark-text {
+  font-family: 'DM Serif Text', serif;
+  color: #2C303F;
+}
+
+.flex-item {
+  display: flex;
+}
+
+.container {
+  padding: 20px;
+}
+
+.btn-email {
+  width: 100%;
+  padding: 16px;
+  border-radius: 5px;
+  background: white;
+  border: solid 1px #e8e8e8;
+  text-align: left;
+  color: #5b5e6d;
+  margin-top: 10px;
+}
+
+.btn-purple {
+  width: 100%;
+  padding: 17px;
+  border-radius: 5px;
+  color: white;
+  background: #192592;
+  margin-top: 10px;
+  border: none;
+}
+
+.btn-white {
+  width: 100%;
+  padding: 17px;
+  border-radius: 5px;
+  color: #192592;
+  background: white;
+  margin-top: 10px;
+  border: #192592 1px solid;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.company-logo-container {
+  border-bottom: 0.5px solid #e8e8e8;
+}
+
+.company-logo-container:last-child {
+  border-bottom: none;
+}
+
+.company-logo {
+  height:40px;
+  margin: 20px;
+}
+
+.image-small{
+  height:20px;
+  margin: 30px;
+}
+
+#company-section {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: #F4F3F4;
+}
+
+#company-list-container {
+  flex-direction: column;
+}
+
+#try-section h3, p {
+  margin: 0;
+}
+
+#links-section img {
+  max-width: 120px;
+}
+
+#links-container ul {
+  list-style: none;
+  line-height: 2rem;
+  padding: 10px 30px;
+  }
+
+  #footer {
+    background: #F4F3F4;
+    text-align: center;
+  }
+
+  #footer {
+    flex-direction: column;
+  }
+
+  #footer ul{
+    justify-content: space-between;
+    list-style: none;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+
+  #country-container img {
+    height: 20px;
+  }
+
+  #country-container span {
+    font-weight: bold;
+  }
+
+  #social-container {
+    padding: 20px;
+  }
+
+  #social-container i {
+    margin: 0 10px;
+  }
+
+@media(max-width: 767px) {
+
+  
+  #nav-bar ul {
+    display: none;
+  }
+
+  #menu {
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+  #showcase {
+    flex-direction: column-reverse;
+  }
+
+  #header-img-container img {
+    width: 300px;
+  }
+
+  #header-text-container h1 {
+    font-size: 2.1rem;
+    line-height: 1.1em;
+    margin-top: 0;
+    padding-right: 100px;
+  }
+
+  #header-text-container p {
+    padding-right: 30px;
+  }
+
+  #button-container {
+    margin-top: 30px;
+  }
+
+  #sign-in-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  #company-section p {
+    padding: 0 10px;
+  }
+
+  #try-section {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #links-section {
+    flex-direction: column;
+  } 
+
+  #slack-logo-container {
+    max-height: 100px;
+  }
+
+  #links-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  #nav-bar ul {
+    display: none;
+  }
+
+  #nav-bar img {
+    width: 15%;
+  }
+
+  #menu i{
+    font-size: 2em;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  
+  #showcase {
+    flex-direction: column-reverse;
+  }
+
+  #header-text-container h1 {
+    font-size: 4em;
+  }
+
+  #header-text-container p {
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+  }
+
+  #header-img-container {
+    text-align: center;
+  }
+
+  #header-img-container img {
+    width: 75%;
+  }
+
+  #button-container .btn-email {
+    width: 50%;
+  }
+
+  #button-container .btn-purple {
+    width: 20%;
+  }
+
+  #sign-in-container {
+    margin: 10px;
+  }
+
+  #company-text-container, #company-list-container {
+    margin: 0 30px;
+  } 
+  #company-text-container .btn-white {
+    width: 30%;
+  }
+
+  #company-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .company-logo-container:nth-child(5) {
+    border-bottom: none;
+  }
+  .company-logo-container:nth-child(odd) {
+    border-right: 0.5px solid #e8e8e8;
+    
+  }
+
+  #try-section {
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  #try-text-container h3 {
+    margin: 5px 0;
+  }
+
+  #try-button-container {
+    width: 50%;
+    display: flex;
+    max-height: 50px;
+    align-items: center;
+  }
+
+  #try-button-container .btn-email, 
+  #try-button-container .btn-purple {
+    width: 50%;
+    margin-right: 5px;
+  }
+
+  #links-container {
+    display: flex;
+  }
+
+  #footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #contact-container li {
+    margin-right: 15px;
+  }
+  #country-container {
+    margin-top: 18px;
+    margin-right: 15px;
+  }
+
+  #social-container {
+    padding-left: 0;
+}
+
+  #social-container i {
+    margin: 0 5px;
+  }
+  
+}
+
+@media (min-width: 960px) {
+  #company-list-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .company-logo-container:nth-child(2) {
+    border-right: 0.5px solid #e8e8e8;
+  }
+
+  .company-logo-container:nth-child(4) {
+    border-right: 0.5px solid #e8e8e8;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  #menu {
+    display: none;
+  }
+
+  #nav-bar img {
+    width: 8%;
+  }
+
+  #nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  .nav-list {
+    margin-right: 40px;
+  }
+
+  .nav-list:last-child {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+  }
+
+  #showcase {
+    flex-direction: row;
+  }
+
+  #header-img-container {
+    width: 50%;
+  }
+
+  #header-text-container {
+    width: 50% ;
+  }
+
+  #header-text-container h1 {
+    padding-right: 30px;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  .btn-email {
+    display: none;
+  }
+
+  #button-container .btn-purple {
+    width: 30%;
+  }
+
+  #try-button-container {
+    width: 30%;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+
+  #links-section {
+    justify-content: space-between;
+  }
+
+  #links-container ul {
+    margin-right: 40px;
+  }
+
+}
